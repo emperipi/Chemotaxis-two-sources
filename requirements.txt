@@ -1,0 +1,7 @@
+###### Requirements packages
+numpy
+pandas
+matplotlib
+scipy
+seaborn
+numba
