@@ -1,24 +1,44 @@
-Supplementary code - Competing chemical gradients change chemotactic dynamics and cell distribution
+# Supplementary Code: Competing Chemical Gradients Change Chemotactic Dynamics and Cell Distribution
+
+**Authors:**  
 Emiliano Perez Ipiña and Brian A. Camley
 
+---
 
-These codes are shared to allow replication of our results and further exploration. Our codes were not developed with the goal of being efficient or easy to read, nor do they follow standard notations and conventions. We cannot guarantee that they will work as predicted if you try to change things without understanding them. In this sense, they are released in the spirit of the CRAPL license.
+## Overview
 
-The zip file includes:
+This repository contains the simulation and analysis code used in the research article:
 
- - Python simulation code used in the article:
-  - "prw_2_grads.py": Simulates cell trajectories in a two-source chemotaxis model and saves downsampled positions over time.
-  - "prw_2_grads_hist.py": Simulates multiple trajectories, accumulates a 2D histogram of cell positions, and saves the spatial density.
-  - "prw_2_grads_steady_state.py": Simulates cell trajectories and saves only the final positions and orientations after reaching the steady-state.
-  - "prw_2_grads_module.py": Contains core functions for trajectory simulation, histogram generation, and chemotactic analysis.
+> *Competing chemical gradients change chemotactic dynamics and cell distribution*  
+> Emiliano Perez Ipiña and Brian A. Camley
 
- - Jupyter notebooks to generate the paper figures: 
-   - "Figure 1.ipynb": Generate paper's Fig. 1 panels.
-   - "Figure 2.ipynb": Generate paper's Fig. 2 panels.
-   - "Figure 3.ipynb": Generate paper's Fig. 3 panels.
-   - "Figure 4.ipynb": Generate paper's Fig. 4 panels. 
-  
-    
-Requirements:
- - All python code runs in python 3, specifically we used Python 3.9.5. 
- - To install all required packages run 'pip install -r requirement.txt'
+The code is provided to facilitate replication of our results and to encourage further exploration.  
+**Note:** The code was primarily developed for our research use — it may not be especially efficient, readable, or adhere to standard notations and conventions. Please read and understand the code before modifying it, as unexpected behavior may occur. These files are released in the spirit of the [CRAPL license](https://matt.might.net/articles/crapl/).
+
+---
+
+## Contents
+
+### Python Simulation Code
+
+- `prw_2_grads.py`: Simulates cell trajectories in a two-source chemotaxis model and saves downsampled positions over time.
+- `prw_2_grads_hist.py`: Runs multiple trajectory simulations, accumulates a 2D histogram of cell positions, and saves the spatial density.
+- `prw_2_grads_steady_state.py`: Simulates trajectories, saving only the final positions and orientations after reaching steady state.
+- `prw_2_grads_module.py`: Contains core functions for trajectory simulation, histogram generation, and chemotactic analysis.
+
+### Jupyter Notebooks for Figure Generation
+
+- `Figure 1.ipynb`: Generates the panels for Figure 1 in the paper.
+- `Figure 2.ipynb`: Generates Figure 2 panels.
+- `Figure 3.ipynb`: Generates Figure 3 panels.
+- `Figure 4.ipynb`: Generates Figure 4 panels.
+
+---
+
+## Requirements
+
+- Python 3.x (developed with Python 3.9.5)
+- Required Python packages listed in `requirement.txt`.  
+  To install, run:
+  ```bash
+  pip install -r requirement.txt
